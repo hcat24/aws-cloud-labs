@@ -9,6 +9,7 @@ credentials
 
 # Terraform
 .terraform/
+*.tfplan
 *.tfstate
 *.tfstate.*
 *.tfvars
@@ -19,3 +20,4 @@ crash.*.log
 # Environment variables
 .env
 .env.*
+
