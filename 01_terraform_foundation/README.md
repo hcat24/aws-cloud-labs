@@ -23,20 +23,20 @@ Prepare and validate a Terraform configuration for future AWS infrastructure.
 Validation completed successfully.
 
 ## Current status
-Defined and locally validated:
-- An S3 bucket with a generated name.
+Deployed one S3 bucket in eu-central-1 using Terraform:
 - All four Block Public Access settings enabled.
 - BucketOwnerEnforced ownership with ACLs disabled.
 - Default SSE-S3 encryption using AES256.
-- force_destroy disabled to prevent automatic deletion of bucket contents.
+- force_destroy disabled.
 
-terraform fmt and terraform validate completed successfully.
+AWS authentication verified using the cloud-labs profile.
+Terraform apply completed: 4 added, 0 changed, 0 destroyed.
+A subsequent terraform plan reported no changes.
+The bucket was confirmed visible in the AWS Console.
 
-No AWS resources have been deployed.
-AWS authentication and deployment permissions have not yet been verified
-for this configuration.
+Terraform state is stored locally and excluded from Git.
+The saved deployment plan is also excluded from Git.
 
 ## Next step
-Verify AWS authentication, review deployment permissions,
-initialize the backend, and inspect a Terraform plan.
-Review estimated costs and approve deployment before creating resources.
+Add outputs for the bucket name and ARN.
+Practise uploading and retrieving a small lab file.
