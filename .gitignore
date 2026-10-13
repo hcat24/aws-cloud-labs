@@ -21,3 +21,9 @@ crash.*.log
 .env
 .env.*
 
+
+# Local S3 uploader files
+02_s3_auto_uploader/.venv/
+02_s3_auto_uploader/.uploader-state/
+02_s3_auto_uploader/incoming/
+__pycache__/
